@@ -1,0 +1,7 @@
+@use '../util/' as u;
+
+.map {
+  &__section {
+    background-color: grey;
+  }
+}

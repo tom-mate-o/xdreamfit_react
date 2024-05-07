@@ -1,0 +1,21 @@
+@use '../util/' as u;
+
+.quote {
+  &__section {
+    background-color: yellow;
+
+    img {
+      max-width: 200px;
+    }
+  }
+
+  img {
+    max-width: 200px;
+  }
+
+  &__container {
+    img {
+      max-width: 200px;
+    }
+  }
+}

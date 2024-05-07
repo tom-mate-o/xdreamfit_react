@@ -1,0 +1,7 @@
+@use '../util/' as u;
+
+.info {
+  &__section {
+    background-color: green;
+  }
+}

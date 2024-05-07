@@ -1,60 +1,18 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import tomBW from '../img/tom_stamp_BW_vector.svg';
-import tomColour from '../img/tom_colour.png';
-import { homedata } from '../app/data/homedata';
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import xdreamfitavatar from '../img/xdreamfit_avatar.jpg';
 import xdreamfit1 from '../img/xdreamfit_1.jpg';
 import xdreamfit2 from '../img/xdreamfit_2.jpg';
 import xdreamfit3 from '../img/xdreamfit_3.jpg';
 import xdreamfit4 from '../img/xdreamfit_4.jpg';
 import xdreamfit_sea from '../img/xdreamfit_sea.jpg';
+import healthicon from '../img/healthicon.png';
 
 export default function Home() {
-  const [currentImage, setCurrentImage] = useState(tomBW);
-
-  const sentences = [
-    'bring things to life with Java Script.',
-    'code.',
-    'build amazing things in React.',
-    'be creative.',
-    'build awesome layouts with SASS.',
-    'learn new things.',
-    'explore.',
-    'design Mockups in Figma.',
-    'drink coffee.',
-    'manage Data with Mongoose.',
-  ];
-
-  const [index, setIndex] = useState(0);
-  const [subIndex, setSubIndex] = useState(0);
-  const [reverse, setReverse] = useState(false);
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  useEffect(() => {
-    if (subIndex === sentences[index].length + 1 && !reverse) {
-      const timeout = setTimeout(() => {
-        setReverse(true);
-      }, 1000);
-      return () => clearTimeout(timeout);
-    }
-
-    if (subIndex === 0 && reverse) {
-      setReverse(false);
-      setIndex((prev) => (prev < sentences.length - 1 ? prev + 1 : 0));
-      return;
-    }
-
-    const timeout = setTimeout(() => {
-      setSubIndex((prev) => prev + (reverse ? -1 : 1));
-    }, 150);
-
-    return () => clearTimeout(timeout);
-  }, [subIndex, index, reverse]);
 
   return (
     <div className="hero">
@@ -92,7 +50,7 @@ export default function Home() {
         </div>
       </div>
       <main>
-        <div className="hightlights__section">
+        <div className="highlights__section">
           <div className="highlights__container" id="1">
             <img src={xdreamfit1} alt="Personal Coaching"></img>
             <h3 className="highlights__title">Personal Coaching</h3>
@@ -145,12 +103,105 @@ export default function Home() {
             <p className="quote__subtitle">
               ...und gemeinsam schaffen wir die Grundlage für beides.
             </p>
-            <img
-              src={xdreamfit_sea}
-              alt="Quote Image"
-              className="quote__image"
-            ></img>
+            <img src={xdreamfit3} alt="Wohlbefinden & Entspannung"></img>
           </div>
+        </div>
+
+        <div className="info_section">
+          <div className="info__container">
+            <div className="info__card" id="1">
+              <img src={healthicon} alt="icon"></img>
+              <h3>Personal Fitness Training</h3>
+            </div>
+
+            <div className="info__card" id="2">
+              <img src={healthicon} alt="icon"></img>
+              <h3>Pilates- Wirbelsäulen- Beckenbodentraining</h3>
+            </div>
+
+            <div className="info__card" id="3">
+              <img src={healthicon} alt="icon"></img>
+              <h3>Atemtraining</h3>
+            </div>
+
+            <div className="info__card" id="4">
+              <img src={healthicon} alt="icon"></img>
+              <h3>Outdoortraining</h3>
+            </div>
+
+            <div className="info__card" id="5">
+              <img src={healthicon} alt="icon"></img>
+              <h3>Entspannungs- und Achtsamkeitstraining</h3>
+            </div>
+
+            <div className="info__card" id="6">
+              <img src={healthicon} alt="icon"></img>
+              <h3>Apnoetauchkurse</h3>
+
+              <div className="info__card" id="7">
+                <img src={healthicon} alt="icon"></img>
+                <h3>Eisbaden Eisschwimmen Kältetraining</h3>
+              </div>
+
+              <div className="info__card" id="8">
+                <img src={healthicon} alt="icon"></img>
+                <h3>Aromatherapie & Energetische Körperanwendungen</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="testimonial__section">
+          <div className="testimonial__container">
+            <img src={healthicon} alt="icon"></img>
+            <p className="testimonial__quote">
+              Das Coaching mit Susi hat mein Leben wirklich verändert. Ich fühle
+              mich nicht nur körperlich stärker, sondern auch mental
+              ausgeglichener. Danke für die inspirierende Reise zu mehr
+              Gesundheit und Lebensfreude!
+            </p>
+            <img
+              className={'hero__image'}
+              src={xdreamfitavatar}
+              alt="testimonial"
+              width={230}
+              height={315}
+            />
+            <p>Name Surname</p>
+            <p>Position</p>
+          </div>
+        </div>
+
+        <div className="social__section">
+          <div className="social__container">
+            <img
+              className={'hero__image'}
+              src={xdreamfitavatar}
+              alt="testimonial"
+              width={230}
+              height={315}
+            />
+            <div className="social__text">
+              <h3>@x_dreamfit</h3>
+              <button>Instagram</button>
+              <button>Threads</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="cta__section">
+          <div className="cta__container">
+            <h2>Starte noch heute!</h2>
+            <p>
+              Worauf wartest du? Beginne noch heute deine Reise zu einem
+              vitaleren Leben und entfalte dein volles Potenzial!
+            </p>
+            <button>Termin vereinbaren</button>
+          </div>
+        </div>
+
+        <div className="map__section">
+          <h3>Map</h3>
         </div>
       </main>
     </div>

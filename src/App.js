@@ -9,15 +9,14 @@ import { ReactComponent as Close } from './img/x-bars-solid.svg';
 
 import Home from './pages/home';
 import About from './pages/about';
-import Skills from './pages/skills';
-import Projects from './pages/projects';
-import Photos from './pages/photos';
-import Art from './pages/art';
+import Coaching from './pages/coaching';
+import Sekundaerpraevention from './pages/sekundaerpraevention';
+import Wohlbefinden from './pages/wohlbefinden';
+import Apnoetauchen from './pages/apnoetauchen';
+import Preise from './pages/preise';
 import Contact from './pages/contact';
 import Impressum from './pages/impressum';
 import Privacydisclaimer from './pages/privacydisclaimer';
-import Detail3littlebirbs from './pages/3littlebirbs';
-import Detailgimme5 from './pages/gimme5';
 
 import { ReactComponent as Mastdodon } from './img/mastodon.svg';
 import { ReactComponent as GitHub } from './img/github.svg';
@@ -74,33 +73,38 @@ export default function App() {
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/aboutme" className="topnav__link">
-                    About Me
+                  <Link to="/about" className="topnav__link">
+                    Über mich
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/skills" className="topnav__link">
-                    Skills
+                  <Link to="/coaching" className="topnav__link">
+                    Coaching
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/projects" className="topnav__link">
-                    Projects
+                  <Link to="/sekundaerpraevention" className="topnav__link">
+                    Sekundär-Prävention
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/photos" className="topnav__link">
-                    Photos
+                  <Link to="/wohlbefinden" className="topnav__link">
+                    Wohlbefinden
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/art" className="topnav__link">
-                    Art
+                  <Link to="/apnoetauchen" className="topnav__link">
+                    Apnoe Tauchen
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/contact" className="topnav__link">
-                    Contact
+                  <Link to="/preise" className="topnav__link">
+                    Preise
+                  </Link>
+                </li>
+                <li className="topnav__item">
+                  <Link to="/kontakt" className="topnav__link">
+                    Kontakt
                   </Link>
                 </li>
               </ul>
@@ -123,33 +127,40 @@ export default function App() {
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/aboutme" className="mobilenav__link">
+                <Link to="/about" className="mobilenav__link">
                   About Me
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/skills" className="mobilenav__link">
-                  Skills
+                <Link to="/coaching" className="mobilenav__link">
+                  Coaching
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/projects" className="mobilenav__link">
-                  Projects
+                <Link to="/sekundaerpraevention" className="mobilenav__link">
+                  Sekundär-Prävention
+                </Link>
+              </li>
+
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/wohlbefinden" className="mobilenav__link">
+                  Wohlbefinden
+                </Link>
+              </li>
+
+              <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/apnoetauchen" className="mobilenav__link">
+                  Apnoe Tauchen
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/photos" className="mobilenav__link">
-                  Photos
+                <Link to="/preise" className="mobilenav__link">
+                  Preise
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/art" className="mobilenav__link">
-                  Art
-                </Link>
-              </li>
-              <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/contact" className="mobilenav__link">
-                  Contact
+                <Link to="/kontakt" className="mobilenav__link">
+                  Kontakt
                 </Link>
               </li>
             </ul>
@@ -159,16 +170,18 @@ export default function App() {
       <div className="wrapper__content">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/aboutme" element={<About />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/photos" element={<Photos />} />
-          <Route path="/art" element={<Art />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/coaching" element={<Coaching />} />
+          <Route
+            path="/sekundaerpraevention"
+            element={<Sekundaerpraevention />}
+          />
+          <Route path="/wohlbefinden" element={<Wohlbefinden />} />
+          <Route path="/apnoetauchen" element={<Apnoetauchen />} />
+          <Route path="/preise" element={<Preise />} />
+          <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/privacydisclaimer" element={<Privacydisclaimer />} />
-          <Route path="/3littlebirbs" element={<Detail3littlebirbs />} />
-          <Route path="/gimme5" element={<Detailgimme5 />} />
         </Routes>
         <footer className="footer">
           <div className="footer__collumn1">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect } from 'react';
 
-export default function About() {
+export default function Apnoetauchen() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -9,7 +9,7 @@ export default function About() {
   return (
     <div>
       <div className="singlepage__contentContainer">
-        <h2>Über mich</h2>
+        <h2>Apnoetauchen</h2>
       </div>
     </div>
   );

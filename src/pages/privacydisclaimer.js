@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import aboutBig from '../img/home_item_images/about_big.jpg';
 import herobg from '../img/hero_bg.jpg';
 
-export default function Impressum() {
+export default function Privacydisclaimer() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);

@@ -1,0 +1,13 @@
+@use '../util/' as u;
+
+.highlights {
+  &__section {
+    background-color: red;
+  }
+
+  &__container {
+    img {
+      max-width: 200px;
+    }
+  }
+}

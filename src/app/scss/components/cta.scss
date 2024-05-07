@@ -1,0 +1,7 @@
+@use '../util/' as u;
+
+.cta {
+  &__section {
+    background-color: orange;
+  }
+}
