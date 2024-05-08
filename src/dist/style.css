@@ -107,9 +107,10 @@ a:active {
   --secondary-button-bg: transparent;
   --secondary-button-bg-hover: hsl(47, 61%, 85%);
   --secondary-button-border: hsl(0, 0%, 100%);
-  --secondary-button-border-hover: hsl(47, 61%, 85%);
+  --secondary-button-border-hover: hsl(46, 30%, 15%);
   --secondary-button-text-color: hsl(0, 0%, 100%);
   --secondary-button-text-color-hover: hsl(49, 11%, 29%);
+  --topnav-link-hover: hsl(180, 100%, 35%);
   --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
   --all-color: hsl(0, 0%, 50%);
   --react-color: hsl(207, 46%, 63%);
@@ -282,6 +283,9 @@ a:active {
 
 .topnav {
   background-color: var(--navbar-color-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 .topnav__wrapper {
   display: flex;
@@ -369,8 +373,8 @@ a:active {
   }
 }
 .topnav__link:hover {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0.6;
+  transition: opacity 0.5s all ease-in-out;
+  color: var(--topnav-link-hover);
 }
 .topnav__hamburger {
   width: 30px;
@@ -498,7 +502,7 @@ a:active {
   margin-block-end: 1.875rem;
   height: 2.5rem;
   width: auto;
-  border: 2px solid var(--text-color-light);
+  border: 5px solid var(--primary-button-bg);
   border-radius: 50%;
   padding: 0.3125rem;
 }
@@ -515,10 +519,15 @@ a:active {
 }
 .mobilenav__links {
   text-align: center;
-  font-size: 1.875rem;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 1;
+  font-weight: 700;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  justify-content: space-between;
+  gap: 1.875rem;
 }
 .mobilenav a {
   color: var(--text-color-light);

@@ -2,6 +2,9 @@
 
 .topnav {
   background-color: var(--navbar-color-bg);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
   &__wrapper {
     display: flex;
@@ -102,8 +105,8 @@
     }
 
     &:hover {
-      transition: opacity 0.5s ease-in-out;
-      opacity: 0.6;
+      transition: opacity 0.5s all ease-in-out;
+      color: var(--topnav-link-hover);
     }
   }
 

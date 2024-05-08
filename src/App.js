@@ -144,7 +144,9 @@ export default function App() {
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
                 <Link to="/sekundaerpraevention" className="mobilenav__link">
-                  Sekundär-Prävention
+                  Sekundär
+                  <br />
+                  Prävention
                 </Link>
               </li>
 
@@ -156,7 +158,9 @@ export default function App() {
 
               <li className="mobilenav__item" onClick={handleCloseClick}>
                 <Link to="/apnoetauchen" className="mobilenav__link">
-                  Apnoe Tauchen
+                  Apnoe
+                  <br />
+                  Tauchen
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
