@@ -1,21 +1,19 @@
 @use '../util/' as u;
 
 .wrapper {
-  width: min(100% - u.rem(48), u.rem(800));
+  width: min(100% - u.rem(48), u.rem(1440));
   margin-inline: auto; // center the grid
-  padding-block-start: u.rem(15);
 
   @include u.breakpoint-down(small) {
     width: 100%;
   }
 
   @include u.breakpoint(medium) {
-    width: min(100% - u.rem(48), u.rem(800));
-    padding-block-start: u.rem(60);
+    width: min(100% - u.rem(48), u.rem(1440));
   }
 
   &__content {
-    width: min(100% - u.rem(48), u.rem(800));
+    width: min(100% - u.rem(48), u.rem(1440));
     margin-inline: auto;
     padding-block-start: u.rem(20);
     min-height: 100vh;

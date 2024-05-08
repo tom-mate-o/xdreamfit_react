@@ -1,31 +1,51 @@
 @use '../util/' as u;
 
 .topnav {
+  background-color: var(--navbar-color-bg);
+
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: nowrap;
-    gap: u.rem(20);
+    padding-block: u.rem(10);
+
+    @include u.breakpoint-down(medium) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: u.rem(10);
+    }
+
+    @include u.breakpoint-down(small) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
   }
 
   &__leftcolumn {
     display: flex;
     flex-direction: column;
     width: auto;
-    padding-left: u.rem(15);
   }
 
   &__logo {
-    width: u.rem(100);
+    max-width: u.rem(280);
+    width: 11.25rem;
+    width: clamp(11.25rem, 9.049295774647888rem + 9.389671361502346vw, 17.5rem);
     height: auto;
+    margin-block-end: 0;
     display: block;
     fill: var(--dark-color-opacity);
     transition: fill 2s ease-in-out;
+    margin-inline-start: u.rem(20);
 
     &:hover {
       fill: var(--primary-button-bg-hover);
+    }
+
+    @include u.breakpoint(medium) {
+      padding-inline-end: u.rem(10);
     }
   }
 
@@ -36,22 +56,14 @@
   }
 
   &__title {
-    color: var(--navbar-color-bg);
-    font-size: u.rem(35);
-    font-weight: 700;
-    line-height: 0.7;
-    margin-block-end: u.rem(10);
-
     @include u.breakpoint(medium) {
-      font-size: u.rem(40);
-      line-height: 0.65;
-      margin-block-end: u.rem(13);
     }
   }
 
   &__links {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     background-color: var(--navbar-color-bg);
     width: auto;
@@ -60,7 +72,7 @@
     @include u.breakpoint(medium) {
       padding-inline-start: u.rem(10);
       height: u.rem(32);
-      gap: u.rem(28);
+      justify-content: space-between;
     }
   }
 
@@ -74,7 +86,17 @@
 
     @include u.breakpoint(medium) {
       display: block;
-      font-size: u.rem(14);
+      // font-size: u.rem(16);
+      font-size: 0.625rem;
+      font-size: clamp(
+        0.625rem,
+        0.49295774647887325rem + 0.5633802816901408vw,
+        1rem
+      );
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      line-height: 1;
+      text-align: center;
       font-weight: 700;
       color: var(--text-color-light);
     }
@@ -97,7 +119,7 @@
 
   &__hamburgerwrapper {
     height: 100%;
-    width: 100%;
+    margin-inline-end: u.rem(20);
     cursor: pointer;
 
     @include u.breakpoint(medium) {

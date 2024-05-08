@@ -3,7 +3,7 @@ import './dist/style.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 
-import { ReactComponent as Logo } from './img/crow_stamp_svg.svg';
+import { ReactComponent as Logo } from './img/xdreamlogohorizontal.svg';
 import { ReactComponent as Hamburger } from './img/bars-solid.svg';
 import { ReactComponent as Close } from './img/x-bars-solid.svg';
 
@@ -55,7 +55,7 @@ export default function App() {
             </Link>
           </div>
           <div className="topnav__rightcolumn">
-            <h1 className="topnav__title">X-DREAM-FIT</h1>
+            <h1 className="topnav__title visually-hidden">X-DREAM-FIT</h1>
             <nav>
               <ul className="topnav__links">
                 <Hamburger
@@ -74,7 +74,9 @@ export default function App() {
                 </li>
                 <li className="topnav__item">
                   <Link to="/about" className="topnav__link">
-                    Über mich
+                    Über
+                    <br />
+                    mich
                   </Link>
                 </li>
                 <li className="topnav__item">
@@ -84,7 +86,9 @@ export default function App() {
                 </li>
                 <li className="topnav__item">
                   <Link to="/sekundaerpraevention" className="topnav__link">
-                    Sekundär-Prävention
+                    Sekundär
+                    <br />
+                    Prävention
                   </Link>
                 </li>
                 <li className="topnav__item">
@@ -94,7 +98,9 @@ export default function App() {
                 </li>
                 <li className="topnav__item">
                   <Link to="/apnoetauchen" className="topnav__link">
-                    Apnoe Tauchen
+                    Apnoe
+                    <br />
+                    Tauchen
                   </Link>
                 </li>
                 <li className="topnav__item">
