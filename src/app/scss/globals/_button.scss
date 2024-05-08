@@ -1,11 +1,14 @@
 @use '../util' as u;
 
 .button {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: u.rem(15);
-  line-height: 0.7;
+  text-transform: uppercase;
+  line-height: 1;
   font-weight: 700;
-  letter-spacing: 0.05em;
+  letter-spacing: 1px;
   text-align: center;
   padding: u.rem(14); // top+bottom 14px
   border-radius: u.rem(24);
@@ -16,7 +19,6 @@
     height: u.rem(45);
     width: u.rem(165);
     font-size: u.rem(20);
-    line-height: 0.75;
   }
 
   transition-property: background-color, border, color; //smooth transition on hover
@@ -25,7 +27,7 @@
 
   &.primary {
     background-color: var(--primary-button-bg);
-    color: var(--text-color-light);
+    color: var(--text-color-dark);
 
     &:hover {
       background-color: var(--primary-button-bg-hover);

@@ -23,6 +23,7 @@
 
     @include u.breakpoint-down(small) {
       width: 100%;
+      padding-block-start: 0;
     }
   }
 }

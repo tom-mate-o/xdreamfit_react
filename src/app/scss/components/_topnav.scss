@@ -48,8 +48,7 @@
     }
 
     @include u.breakpoint(medium) {
-      margin-inline-start: 0;
-      padding-inline-end: u.rem(10);
+      padding-inline-end: u.rem(30);
     }
   }
 
@@ -74,7 +73,6 @@
     height: u.rem(36);
 
     @include u.breakpoint(medium) {
-      padding-inline-start: u.rem(10);
       height: u.rem(32);
       justify-content: space-between;
     }
