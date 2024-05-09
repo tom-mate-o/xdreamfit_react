@@ -121,6 +121,7 @@ a:active {
   --topnav-link-hover: #00b3b3;
   --highlight-bg: #3a506b;
   --quote-bg: #0b132b;
+  --card-bg: #00b3b3;
   --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
   --all-color: hsl(0, 0%, 50%);
   --react-color: hsl(207, 46%, 63%);
@@ -1118,8 +1119,35 @@ button:hover {
   }
 }
 
-.info__section {
-  background-color: green;
+.info__container {
+  margin-bottom: 40px;
+}
+.info__card {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  border-radius: 25px 0px 25px 0px;
+  background-color: var(--card-bg);
+}
+.info__card img {
+  width: 6.25rem;
+  height: auto;
+  object-fit: cover;
+}
+.info__card h3 {
+  line-height: 1;
+  text-transform: uppercase;
+  font-size: 0.9375rem;
+  font-size: clamp(0.9375rem, 0.8274647887rem + 0.4694835681vw, 1.25rem);
+}
+@media (min-width: 43.75em) {
+  .info__card {
+    height: 200px;
+  }
 }
 
 .testimonial__section {

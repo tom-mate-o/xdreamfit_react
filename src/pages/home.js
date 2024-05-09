@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+
+import PauseOnHover from '../components/PauseOnHover';
 import xdreamfitavatar from '../img/xdreamfit_avatar.jpg';
 import xdreamfit1 from '../img/xdreamfit_1.jpg';
 import xdreamfit2 from '../img/xdreamfit_2.jpg';
@@ -14,6 +16,14 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
 
   return (
     <div className="hero">
@@ -126,47 +136,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="info_section">
+        <div className="info_section wrapper">
           <div className="info__container">
-            <div className="info__card" id="1">
-              <img src={healthicon} alt="icon"></img>
-              <h3>Personal Fitness Training</h3>
-            </div>
-
-            <div className="info__card" id="2">
-              <img src={healthicon} alt="icon"></img>
-              <h3>Pilates- Wirbelsäulen- Beckenbodentraining</h3>
-            </div>
-
-            <div className="info__card" id="3">
-              <img src={healthicon} alt="icon"></img>
-              <h3>Atemtraining</h3>
-            </div>
-
-            <div className="info__card" id="4">
-              <img src={healthicon} alt="icon"></img>
-              <h3>Outdoortraining</h3>
-            </div>
-
-            <div className="info__card" id="5">
-              <img src={healthicon} alt="icon"></img>
-              <h3>Entspannungs- und Achtsamkeitstraining</h3>
-            </div>
-
-            <div className="info__card" id="6">
-              <img src={healthicon} alt="icon"></img>
-              <h3>Apnoetauchkurse</h3>
-
-              <div className="info__card" id="7">
-                <img src={healthicon} alt="icon"></img>
-                <h3>Eisbaden Eisschwimmen Kältetraining</h3>
-              </div>
-
-              <div className="info__card" id="8">
-                <img src={healthicon} alt="icon"></img>
-                <h3>Aromatherapie & Energetische Körperanwendungen</h3>
-              </div>
-            </div>
+            <PauseOnHover />
           </div>
         </div>
 
