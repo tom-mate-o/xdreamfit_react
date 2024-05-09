@@ -1,24 +1,26 @@
 @use '../util/' as u;
 
 .hero {
+  width: 100%;
+  overflow: hidden;
   &__bg-image {
     width: 100%;
     height: auto;
-    padding-block: 20px;
-    padding-inline: 20px;
     background-image: url('../img/hero_bg.jpg');
     background-size: cover;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto;
+    padding: u.rem(20);
 
     @include u.breakpoint('medium') {
       grid-template-columns: 2fr 1fr;
       grid-template-rows: auto auto;
-
-      padding-block: u.rem(20);
-      padding-inline: u.rem(30);
       margin-block-end: u.rem(20);
+    }
+
+    @include u.breakpoint('large') {
+      padding: u.rem(30);
     }
   }
   &__title {
@@ -46,6 +48,7 @@
   }
 
   &__left {
+    width: 100%;
     grid-column: 1/3;
     grid-row: 3/4;
     height: 100%;
@@ -64,10 +67,10 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    width: 90%;
 
     @include u.breakpoint('medium') {
       text-align: left;
-      padding-inline-end: u.rem(20);
     }
   }
 
@@ -96,6 +99,7 @@
   }
 
   &__right {
+    width: 100%;
     grid-column: 1/3;
     grid-row: 1/2;
     display: grid;
@@ -110,7 +114,7 @@
 
   &__image {
     width: u.rem(200);
-    width: clamp(u.rem(200), 8.1rem + 18.78vw, u.rem(400));
+    width: clamp(u.rem(200), 8.1rem + 18.78vw, u.rem(350));
     height: auto;
     border-radius: 50%;
     object-fit: cover;

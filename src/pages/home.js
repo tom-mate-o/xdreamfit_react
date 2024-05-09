@@ -25,9 +25,9 @@ export default function Home() {
         <div className="hero__left">
           <div className="hero__text">
             <p className="hero__content">
-              👋 Hi, ich bin Susi. Tauche ein in die Welt des ganzheitlichen
-              Wohlbefindens. Gemeinsam erreichen wir deine Ziele während dein
-              Körper und Geist in Einklang kommen.
+              👋 Hi, ich bin Susi. Tauche mit mir ein in die Welt des
+              ganzheitlichen Wohlbefindens. Gemeinsam erreichen wir deine Ziele
+              während dein Körper und Geist in Einklang kommen.
             </p>
             <div className="hero__buttons">
               <Link to="/about" className="hero__button button primary">
@@ -50,48 +50,64 @@ export default function Home() {
         </div>
       </div>
       <main>
-        <div className="highlights__section">
+        <div className="highlights__section wrapper">
           <div className="highlights__container" id="1">
             <img src={xdreamfit1} alt="Personal Coaching"></img>
-            <h3 className="highlights__title">Personal Coaching</h3>
-            <p className="highlights__text">
-              Begleite mich auf deiner Reise zu persönlichem Wachstum und
-              Entfaltung. Gemeinsam schaffen wir die Grundlage für deine beste
-              Version.
-            </p>
-            <button className="highlights__button">...MEHR!</button>
+            <div className="highlights__textContainer">
+              <h3 className="highlights__title">Personal Coaching</h3>
+              <p className="highlights__text">
+                Begleite mich auf deiner Reise zu persönlichem Wachstum und
+                Entfaltung. Gemeinsam schaffen wir die Grundlage für deine beste
+                Version.
+              </p>
+              <button className="highlights__button tealButton">
+                <Link to="/coaching">...mehr!</Link>
+              </button>
+            </div>
           </div>
 
           <div className="highlights__container" id="2">
             <img src={xdreamfit2} alt="Sekundär-Prävention"></img>
-            <h3 className="highlights__title">Sekundär-Prävention</h3>
-            <p className="highlights__text">
-              Gemeinsam verhindern wir potenzielle Probleme. Mit
-              maßgeschneiderter Sekundärprävention fördern wir dein Wohlbefinden
-              langfristig.
-            </p>
-            <button className="highlights__button">...MEHR!</button>
+            <div className="highlights__textContainer">
+              <h3 className="highlights__title">Sekundär-Prävention</h3>
+              <p className="highlights__text">
+                Gemeinsam verhindern wir potenzielle Probleme. Mit
+                maßgeschneiderter Sekundärprävention fördern wir dein
+                Wohlbefinden langfristig.
+              </p>
+              <button className="highlights__button tealButton">
+                <Link to="/sekundaerpraevention">...mehr!</Link>
+              </button>
+            </div>
           </div>
 
           <div className="highlights__container" id="3">
             <img src={xdreamfit3} alt="Wohlbefinden & Entspannung"></img>
-            <h3 className="highlights__title">Wohlbefinden & Entspannung</h3>
-            <p className="highlights__text">
-              Fördere dein Wohlbefinden.Finde innere Balance und Entspannung für
-              Körper und Geist durch Körperanwendungen und mehr!
-            </p>
-            <button className="highlights__button">...MEHR!</button>
+            <div className="highlights__textContainer">
+              <h3 className="highlights__title">Wohlbefinden</h3>
+              <p className="highlights__text">
+                Fördere dein Wohlbefinden.Finde innere Balance und Entspannung
+                für Körper und Geist durch Körperanwendungen und mehr!
+              </p>
+              <button className="highlights__button tealButton">
+                <Link to="/wohlbefinden">...mehr!</Link>
+              </button>
+            </div>
           </div>
 
           <div className="highlights__container" id="4">
             <img src={xdreamfit4} alt="Apnoe Tauchen"></img>
-            <h3 className="highlights__title">Apnoe Tauchen</h3>
-            <p className="highlights__text">
-              Erfahre die Faszination des Apnoe-Tauchens. Tauche ein in eine
-              Welt voller Ruhe und Abenteuer unter Wasser alles mit nur einem
-              einzigen Atemzug.
-            </p>
-            <button className="highlights__button">...MEHR!</button>
+            <div className="highlights__textContainer">
+              <h3 className="highlights__title">Apnoe Tauchen</h3>
+              <p className="highlights__text">
+                Erfahre die Faszination des Apnoe-Tauchens. Tauche ein in eine
+                Welt voller Ruhe und Abenteuer unter Wasser alles mit nur einem
+                einzigen Atemzug.
+              </p>
+              <button className="highlights__button tealButton">
+                <Link to="/apnoetauchen">...mehr!</Link>
+              </button>
+            </div>
           </div>
         </div>
 

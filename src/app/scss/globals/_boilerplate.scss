@@ -56,3 +56,12 @@ img {
     border: 1px solid;
   }
 }
+
+a {
+  color: var(--text-color-dark);
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--text-color-dark);
+}
