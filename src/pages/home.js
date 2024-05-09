@@ -7,6 +7,7 @@ import xdreamfit2 from '../img/xdreamfit_2.jpg';
 import xdreamfit3 from '../img/xdreamfit_3.jpg';
 import xdreamfit4 from '../img/xdreamfit_4.jpg';
 import xdreamfit_sea from '../img/xdreamfit_sea.jpg';
+import yingyang from '../img/yingyang.png';
 import healthicon from '../img/healthicon.png';
 
 export default function Home() {
@@ -119,7 +120,9 @@ export default function Home() {
             <p className="quote__subtitle">
               ...und gemeinsam schaffen wir die Grundlage für beides.
             </p>
-            <img src={xdreamfit3} alt="Wohlbefinden & Entspannung"></img>
+            <div className="quote__picturecontainer">
+              <img src={yingyang} alt="Wohlbefinden & Entspannung"></img>
+            </div>
           </div>
         </div>
 

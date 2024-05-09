@@ -54,12 +54,11 @@ img {
   border: 1px solid;
 }
 
-a {
+button a {
   color: var(--text-color-dark);
   text-decoration: none;
 }
-
-a:visited {
+button a:visited {
   color: var(--text-color-dark);
 }
 
@@ -121,6 +120,7 @@ a:active {
   --secondary-button-text-color-hover: hsl(233, 14%, 25%);
   --topnav-link-hover: #00b3b3;
   --highlight-bg: #3a506b;
+  --quote-bg: #0b132b;
   --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
   --all-color: hsl(0, 0%, 50%);
   --react-color: hsl(207, 46%, 63%);
@@ -1055,16 +1055,67 @@ button:hover {
 }
 
 .quote__section {
-  background-color: yellow;
+  background-color: var(--quote-bg);
+  padding: 1.25rem;
 }
-.quote__section img {
-  max-width: 200px;
+@media (min-width: 43.75em) {
+  .quote__section {
+    padding-block: 3.75rem;
+  }
 }
-.quote img {
-  max-width: 200px;
+@media (min-width: 56.25em) {
+  .quote__section {
+    padding-block: 5rem;
+  }
 }
-.quote__container img {
-  max-width: 200px;
+.quote__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  text-align: center;
+}
+.quote__container h2 {
+  color: var(--text-color-light);
+  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 2.32rem + 0.75vw, 3rem);
+  line-height: 1;
+  max-width: 600px;
+}
+.quote__container p {
+  color: var(--text-color-light);
+  font-size: 1.25rem;
+  font-size: clamp(1.25rem, 1.16rem + 0.38vw, 1.5rem);
+  line-height: 1;
+  max-width: 600px;
+}
+.quote__picturecontainer {
+  background-image: url(../img/xdreamfit_sea.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 18.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px 0 25px 0;
+}
+.quote__picturecontainer img {
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+}
+@media (min-width: 43.75em) {
+  .quote__picturecontainer {
+    width: 100%;
+    max-width: 43.75rem;
+    max-height: 25rem;
+    padding-block: 1.25rem;
+  }
+  .quote__picturecontainer img {
+    margin-block: 1.25rem;
+    width: 15rem;
+  }
 }
 
 .info__section {

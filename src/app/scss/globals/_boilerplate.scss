@@ -57,11 +57,13 @@ img {
   }
 }
 
-a {
-  color: var(--text-color-dark);
-  text-decoration: none;
-}
+button {
+  a {
+    color: var(--text-color-dark);
+    text-decoration: none;
+  }
 
-a:visited {
-  color: var(--text-color-dark);
+  a:visited {
+    color: var(--text-color-dark);
+  }
 }
