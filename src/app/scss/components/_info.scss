@@ -28,12 +28,9 @@
     h3 {
       line-height: 1;
       text-transform: uppercase;
-      font-size: 0.9375rem;
-      font-size: clamp(
-        0.9375rem,
-        0.8274647887323944rem + 0.4694835680751174vw,
-        1.25rem
-      );
+      font-size: u.rem(15);
+      font-size: clamp(u.rem(15), 0.83rem + 0.47vw, u.rem(20));
+      color: var(--text-color-light);
     }
 
     @include u.breakpoint(medium) {
