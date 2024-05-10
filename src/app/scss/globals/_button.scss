@@ -34,6 +34,16 @@
     }
   }
 
+  &.social {
+    background-color: var(--primary-button-bg);
+    color: var(--text-color-dark);
+    font-family: u.$font;
+    padding: u.rem(20);
+    &:hover {
+      background-color: var(--primary-button-bg-hover);
+    }
+  }
+
   &.secondary {
     padding: u.rem(12);
     background-color: hsla(49, 11%, 30%, 0.2);
@@ -69,4 +79,8 @@
   transition-property: background-color, border, color; //smooth transition on hover
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
+
+  &:hover {
+    background-color: var(--primary-button-bg-hover);
+  }
 }

@@ -13,6 +13,9 @@ import yingyang from '../img/yingyang.png';
 import healthicon from '../img/healthicon.png';
 import quote from '../img/quote.png';
 import user from '../img/user.png';
+import xdreamfitinsta from '../img/xdreaminsta.png';
+import { BsThreads } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
 
 export default function Home() {
   useEffect(() => {
@@ -173,15 +176,30 @@ export default function Home() {
           <div className="social__container">
             <img
               className={'hero__image'}
-              src={xdreamfitavatar}
+              src={xdreamfitinsta}
               alt="testimonial"
               width={230}
               height={315}
             />
             <div className="social__text">
               <h3>@x_dreamfit</h3>
-              <button>Instagram</button>
-              <button>Threads</button>
+              <button className="button social">
+                <Link
+                  to="https://www.instagram.com/x_dreamfit/"
+                  target="_blank"
+                >
+                  <span>
+                    <BsInstagram /> Instagram
+                  </span>
+                </Link>
+              </button>
+              <button className="button social">
+                <Link to="https://www.threads.net/@x_dreamfit" target="_blank">
+                  <span>
+                    <BsThreads /> Threads
+                  </span>
+                </Link>
+              </button>
             </div>
           </div>
         </div>
