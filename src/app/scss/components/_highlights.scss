@@ -80,7 +80,7 @@
       height: auto;
 
       @include u.breakpoint(large) {
-        min-height: 45px;
+        min-height: u.rem(45);
         display: flex;
         align-items: center;
         justify-content: center;

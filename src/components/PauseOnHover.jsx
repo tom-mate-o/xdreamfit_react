@@ -2,7 +2,6 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import healthicon from '../../src/img/healthicon.png';
 import air from '../../src/img/air.png';
 import apnoe from '../../src/img/apnoe.png';
 import aroma from '../../src/img/aroma.png';
@@ -59,7 +58,9 @@ export default function PauseOnHover() {
               Pilates-
               <br />
               Wirbelsäulen- <br />
-              Beckenbodentraining
+              Beckenboden-
+              <br />
+              training
             </h3>
           </div>
         </div>

@@ -11,6 +11,8 @@ import xdreamfit4 from '../img/xdreamfit_4.jpg';
 import xdreamfit_sea from '../img/xdreamfit_sea.jpg';
 import yingyang from '../img/yingyang.png';
 import healthicon from '../img/healthicon.png';
+import quote from '../img/quote.png';
+import user from '../img/user.png';
 
 export default function Home() {
   useEffect(() => {
@@ -44,7 +46,7 @@ export default function Home() {
               <Link to="/about" className="hero__button button primary">
                 Über mich
               </Link>
-              <Link to="/kontact" className="hero__button button secondary">
+              <Link to="/kontakt" className="hero__button button secondary">
                 Kontakt
               </Link>
             </div>
@@ -144,22 +146,26 @@ export default function Home() {
 
         <div className="testimonial__section">
           <div className="testimonial__container">
-            <img src={healthicon} alt="icon"></img>
-            <p className="testimonial__quote">
+            <img src={quote} alt="icon"></img>
+            <h3 className="testimonial__quote">
               Das Coaching mit Susi hat mein Leben wirklich verändert. Ich fühle
               mich nicht nur körperlich stärker, sondern auch mental
               ausgeglichener. Danke für die inspirierende Reise zu mehr
               Gesundheit und Lebensfreude!
-            </p>
-            <img
-              className={'hero__image'}
-              src={xdreamfitavatar}
-              alt="testimonial"
-              width={230}
-              height={315}
-            />
-            <p>Name Surname</p>
-            <p>Position</p>
+            </h3>
+            <div className="testimonial__user">
+              <img
+                className={'hero__image'}
+                src={user}
+                alt="testimonial"
+                width={230}
+                height={315}
+              />
+              <div>
+                <p>Name Surname</p>
+                <p> Poistion</p>
+              </div>
+            </div>
           </div>
         </div>
 
