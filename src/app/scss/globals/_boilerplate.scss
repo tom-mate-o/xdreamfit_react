@@ -67,3 +67,15 @@ button {
     color: var(--text-color-dark);
   }
 }
+
+a {
+  color: var(--link-color);
+}
+
+a:visited {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-color-hover);
+}

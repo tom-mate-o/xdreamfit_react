@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { useState } from 'react';
 
 import { ReactComponent as Logo } from './img/xdreamlogohorizontal.svg';
+import { ReactComponent as LogoVertical } from './img/xdreamlogovertical.svg';
 import { ReactComponent as Hamburger } from './img/bars-solid.svg';
 import { ReactComponent as Close } from './img/x-bars-solid.svg';
 
@@ -18,8 +19,9 @@ import Contact from './pages/contact';
 import Impressum from './pages/impressum';
 import Privacydisclaimer from './pages/privacydisclaimer';
 
-import { ReactComponent as Mastdodon } from './img/mastodon.svg';
-import { ReactComponent as GitHub } from './img/github.svg';
+import { BsThreads } from 'react-icons/bs';
+import { BsInstagram } from 'react-icons/bs';
+
 import { ReactComponent as Extern } from './img/square-arrow-up-right-solid.svg';
 
 export default function App() {
@@ -195,47 +197,92 @@ export default function App() {
         </Routes>
         <footer className="footer">
           <div className="footer__collumn1">
-            <Link to="/" className="topnav__homelink hover-fade">
-              <Logo className="footer__logo" />
-            </Link>
-            <p>©2024 X-DREAM-FIT-COACHING</p>
-          </div>
-          <div className="footer__collumn2">
+            <h3>Sitemap</h3>
             <ul>
               <li>
-                <a
-                  href="https://github.com/tom-mate-o"
-                  target="_blank"
-                  className="footer__link"
-                >
-                  <GitHub className="footer__socialicon" />
-                  GitHub
-                  <Extern className="footer__externicon" />
-                </a>
+                <Link to="/about" className="footer__link">
+                  Über mich
+                </Link>
               </li>
               <li>
-                <a
-                  href="https://mastodon.art/@tomkra"
-                  target="_blank"
-                  className="footer__link"
-                >
-                  <Mastdodon className="footer__socialicon" />
-                  Mastodon
-                  <Extern className="footer__externicon" />
-                </a>
+                <Link to="/coaching" className="footer__link">
+                  Coaching
+                </Link>
               </li>
-            </ul>
-          </div>
-          <div className="footer__collumn3">
-            <ul>
               <li>
-                <Link to="/contact" className="footer__link">
-                  Contact
+                <Link to="/sekundaerpraevention" className="footer__link">
+                  Sekundär Prävention
+                </Link>
+              </li>
+              <li>
+                <Link to="/wohlbefinden" className="footer__link">
+                  Wohlbefinden
+                </Link>
+              </li>
+              <li>
+                <Link to="/apnoetauchen" className="footer__link">
+                  Apnoe Tauchen
+                </Link>
+              </li>
+              <li>
+                <Link to="/preise" className="footer__link">
+                  Preise
+                </Link>
+              </li>
+              <li>
+                <Link to="/kontakt" className="footer__link">
+                  Kontakt
                 </Link>
               </li>
             </ul>
           </div>
+
+          <div className="footer__collumn2">
+            <h3>Follow me</h3>
+            <ul>
+              <li>
+                <a
+                  href="https://www.instagram.com/x_dreamfit/"
+                  target="_blank"
+                  className="footer__link"
+                >
+                  <BsInstagram className="footer__socialicon" />
+                  Instagram
+                  <Extern className="footer__externicon" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.threads.net/@x_dreamfit"
+                  target="_blank"
+                  className="footer__link"
+                >
+                  <BsThreads className="footer__socialicon" />
+                  Threads
+                  <Extern className="footer__externicon" />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div className="footer__collumn3">
+            <h3>Kontakt</h3>
+
+            <div>
+              <p>Susanne Roth</p>
+              <p>Margarethe-Schütte-Lihotzky Siedlung 61</p>
+              <p>8605 Kapfenberg</p>
+              <br />
+            </div>
+            <div>
+              <p>+43 (0) 670 123 456 7</p>
+              <a href="mailto:office@xdreamfit.net">
+                <p>office@xdreamfit.net</p>
+              </a>
+            </div>
+          </div>
           <div className="footer__collumn4">
+            <h3>Privacy</h3>
             <ul>
               <li>
                 <Link to="/impressum" className="footer__link">
@@ -248,6 +295,39 @@ export default function App() {
                 </Link>
               </li>
             </ul>
+          </div>
+          <div className="footer__collumn5">
+            <div className="footer__collumn5__logoGroup">
+              <Link to="/" className="topnav__homelink hover-fade">
+                <Logo className="footer__logo horizontal" />
+              </Link>
+              <LogoVertical className="footer__logo vertical" />
+              <p className="footer__collumn5__copyright">
+                {`©${new Date().getFullYear()}`} X-DREAM-FIT-COACHING
+              </p>
+              <p className="footer__collumn5__tom">
+                Icons by{' '}
+                <a
+                  href="https://www.flaticon.com/authors/juicy-fish/sketchy?author_id=313&type=standard"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ whiteSpace: 'nowrap' }}
+                >
+                  Flaticon (juicy_fish)
+                </a>
+              </p>
+            </div>
+            <p className="footer__collumn5__tom">
+              Made with 💙 by{' '}
+              <a
+                href="https://tomkra.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ whiteSpace: 'nowrap' }}
+              >
+                Tom Kra
+              </a>
+            </p>
           </div>
         </footer>
       </div>

@@ -4,7 +4,7 @@
   background-color: var(--navbar-color-bg);
   position: sticky;
   top: 0;
-  z-index: 1000;
+  z-index: 99999;
 
   &__wrapper {
     display: flex;
@@ -82,6 +82,11 @@
     display: flex;
   }
 
+  a,
+  a:visited {
+    color: var(--text-color-light);
+  }
+
   &__link {
     display: none;
     transition: color 2s ease;
@@ -100,7 +105,6 @@
       line-height: 1;
       text-align: center;
       font-weight: 700;
-      color: var(--text-color-light);
     }
 
     &:hover {
