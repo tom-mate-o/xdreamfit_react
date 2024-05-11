@@ -23,7 +23,7 @@ export default function Impressum() {
             </p>
             <p>
               <br />
-              <b>Webseitenbetreiber:</b> Thomas Kranawetter
+              <b>Webseitenbetreiberin:</b> Susanne Roth
               <br />
               <br />
             </p>
@@ -32,7 +32,7 @@ export default function Impressum() {
               Margarete Schütte-Lihotzky 61, 8605 Kapfenberg
               <br />
               <br />
-              <b>Kontaktdaten:</b> <br /> Email: mail@tomkra.dev <br />
+              <b>Kontaktdaten:</b> <br /> Email: office@xdreamfit.net <br />
             </p>
             <br />
             <p>

@@ -118,7 +118,6 @@ a:active {
   --text-color-dark: hsl(233, 14%, 25%);
   --mobilemenu-bg: hsl(225, 40%, 18%);
   --dark-bg: hsl(225, 40%, 18%);
-  --light-bg: hsl(0, 0%, 100%);
   --content-text-color-light: hsl(0, 0%, 100%);
   --content-text-color-dark: hsl(233, 14%, 25%);
   --content-image-headline-color: hsl(0, 0%, 100%);
@@ -141,6 +140,7 @@ a:active {
   --testimonial-bg: #3a506b;
   --socialcontainer-bg: #0b132b;
   --cta-bg: #00d3d4;
+  --sp-bg: #a9b2be;
   --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
   --all-color: hsl(0, 0%, 50%);
   --react-color: hsl(207, 46%, 63%);
@@ -805,29 +805,13 @@ a:active {
 }
 
 .singlepage__contentContainer {
-  background-color: var(--light-bg);
+  background-color: var(--sp-bg);
+  padding: 1.25rem;
+  border-radius: 25px 0 25px 0;
+  margin-bottom: 1.25rem;
 }
 .singlepage__contentContainer p {
   color: var(--content-text-color-dark);
-}
-.singlepage__headerImage {
-  height: 9.375rem;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.singlepage__headerImage h1 {
-  color: var(--content-image-headline-color);
-  font-size: 1.875rem;
-  font-size: clamp(1.875rem, 2.14rem + 0.47vw, 2.5rem);
-  text-align: center;
-}
-@media (min-width: 43.75em) {
-  .singlepage__headerImage {
-    height: 20.625rem;
-  }
 }
 .singlepage__dividerHeadline {
   text-align: center;
@@ -835,6 +819,7 @@ a:active {
   background-color: var(--dark-bg);
   color: var(--content-text-color-light);
   margin-block-end: 1.875rem;
+  text-transform: uppercase;
 }
 .singlepage__dividerSubHeadline {
   text-align: center;
@@ -967,6 +952,15 @@ a:active {
   color: grey;
 }
 
+a,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
 .about__profilecontainer {
   background-color: var(--dark-bg);
   display: grid;
@@ -1089,7 +1083,7 @@ input {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--dark-bg);
-  font-family: "Inria Serif", serif;
+  font-family: "Source Sans 3", sans-serif;
 }
 input:focus {
   outline: none;
@@ -1101,7 +1095,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--dark-bg);
-  font-family: "Inria Serif", serif;
+  font-family: "Source Sans 3", sans-serif;
 }
 textarea:focus {
   outline: none;

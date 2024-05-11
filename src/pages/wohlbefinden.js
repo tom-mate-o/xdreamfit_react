@@ -9,7 +9,10 @@ export default function Wohlbefinden() {
   return (
     <div>
       <div className="singlepage__contentContainer">
-        <h2>Wohlbefinden</h2>
+        <div className="singlepage__dividerHeadline">
+          <h2>Wohlbefinden</h2>
+        </div>
+        <p>coming soon</p>
       </div>
     </div>
   );

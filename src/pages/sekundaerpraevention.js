@@ -9,7 +9,10 @@ export default function Sekundaerpraevention() {
   return (
     <div>
       <div className="singlepage__contentContainer">
-        <h2>Sekundaerpraevention</h2>
+        <div className="singlepage__dividerHeadline">
+          <h2>Sekundärprevention</h2>
+        </div>
+        <p>coming soon</p>
       </div>
     </div>
   );

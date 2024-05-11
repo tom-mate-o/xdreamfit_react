@@ -9,7 +9,10 @@ export default function Coaching() {
   return (
     <div>
       <div className="singlepage__contentContainer">
-        <h2>Coaching</h2>
+        <div className="singlepage__dividerHeadline">
+          <h2>Personal Coaching</h2>
+        </div>
+        <p>coming soon</p>
       </div>
     </div>
   );

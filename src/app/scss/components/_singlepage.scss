@@ -2,29 +2,13 @@
 
 .singlepage {
   &__contentContainer {
-    background-color: var(--light-bg);
+    background-color: var(--sp-bg);
+    padding: u.rem(20);
+    border-radius: 25px 0 25px 0;
+    margin-bottom: u.rem(20);
+
     p {
       color: var(--content-text-color-dark);
-    }
-  }
-
-  &__headerImage {
-    height: u.rem(150);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    h1 {
-      color: var(--content-image-headline-color);
-      font-size: u.rem(30);
-      font-size: clamp(u.rem(30), 2.14rem + 0.47vw, u.rem(40));
-      text-align: center;
-    }
-
-    @include u.breakpoint('medium') {
-      height: u.rem(330);
     }
   }
 
@@ -34,6 +18,7 @@
     background-color: var(--dark-bg);
     color: var(--content-text-color-light);
     margin-block-end: u.rem(30);
+    text-transform: uppercase;
   }
 
   &__dividerSubHeadline {
@@ -181,4 +166,13 @@
       }
     }
   }
+}
+
+a,
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: gray;
 }

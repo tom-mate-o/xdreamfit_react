@@ -29,7 +29,7 @@ input {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--dark-bg);
-  font-family: 'Inria Serif', serif;
+  font-family: u.$font;
 
   &:focus {
     outline: none;
@@ -42,7 +42,7 @@ textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid var(--dark-bg);
-  font-family: 'Inria Serif', serif;
+  font-family: u.$font;
 
   &:focus {
     outline: none;
