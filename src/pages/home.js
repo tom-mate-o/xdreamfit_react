@@ -172,7 +172,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="social__section">
+        <div className="social__section wrapper">
           <div className="social__container">
             <img
               className={'hero__image'}
@@ -211,7 +211,7 @@ export default function Home() {
               Worauf wartest du? Beginne noch heute deine Reise zu einem
               vitaleren Leben und entfalte dein volles Potenzial!
             </p>
-            <button>Termin vereinbaren</button>
+            <button className="button cta">Termin vereinbaren</button>
           </div>
         </div>
 

@@ -12,8 +12,10 @@
   --content-text-color-dark: hsl(233, 14%, 25%);
   --content-image-headline-color: hsl(0, 0%, 100%);
 
-  --primary-button-bg: #00d6d6;
-  --primary-button-bg-hover: #00b3b3;
+  --primary-button-bg: hsl(180, 100%, 42%);
+  --primary-button-bg-hover: hsl(180, 100%, 35%);
+  --cta-button-bg: hsl(210, 9%, 96%);
+  --cta-button-bg-hover: hsl(0, 0%, 80%);
   --secondary-button-bg: transparent;
   --secondary-button-bg-hover: hsl(210, 9%, 96%);
   --secondary-button-border: hsl(210, 9%, 96%);
@@ -27,6 +29,7 @@
   --card-bg: #00b3b3;
   --testimonial-bg: #3a506b;
   --socialcontainer-bg: #0b132b;
+  --cta-bg: #00d3d4;
 
   --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
 

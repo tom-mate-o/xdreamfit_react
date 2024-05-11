@@ -38,9 +38,21 @@
     background-color: var(--primary-button-bg);
     color: var(--text-color-dark);
     font-family: u.$font;
-    padding: u.rem(20);
+
     &:hover {
       background-color: var(--primary-button-bg-hover);
+    }
+  }
+
+  &.cta {
+    background-color: var(--cta-button-bg);
+    color: var(--text-color-dark);
+    font-family: u.$font;
+
+    border: 2px solid var(--text-color-dark);
+
+    &:hover {
+      background-color: var(--cta-button-bg-hover);
     }
   }
 

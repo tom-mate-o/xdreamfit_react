@@ -20,7 +20,7 @@
     }
 
     @include u.breakpoint('large') {
-      padding: u.rem(30);
+      padding: u.rem(50);
     }
   }
   &__title {

@@ -5,7 +5,7 @@
     width: 100%;
     margin-block-start: u.rem(30);
     margin-block-end: u.rem(30);
-    margin-inline: u.rem(15);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -20,7 +20,7 @@
     border-radius: 25px 0 25px 0;
     gap: u.rem(15);
     padding-block: u.rem(15);
-    width: 100%;
+    width: 90%;
 
     @include u.breakpoint('medium') {
       flex-direction: row;
