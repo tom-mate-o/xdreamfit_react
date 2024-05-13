@@ -275,7 +275,7 @@ export default function App() {
               <br />
             </div>
             <div>
-              <p>+43 (0) 670 123 456 7</p>
+              <p>+43 (0) 664 243 50 22</p>
               <a href="mailto:office@xdreamfit.net">
                 <p>office@xdreamfit.net</p>
               </a>
