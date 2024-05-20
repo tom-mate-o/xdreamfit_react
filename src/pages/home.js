@@ -169,22 +169,13 @@ export default function Home() {
           <div className="testimonial__container">
             <img src={quote} alt="icon"></img>
             <h3 className="testimonial__quote">
-              Das Coaching mit Susi hat mein Leben wirklich verändert. Ich fühle
-              mich nicht nur körperlich stärker, sondern auch mental
-              ausgeglichener. Danke für die inspirierende Reise zu mehr
-              Gesundheit und Lebensfreude!
+              Die Grenze ist der Verstand. Solange der Verstand sich vorstellen
+              kann, dass du etwas tun kannst, kannst du es tun, solange du
+              wirklich zu 100 Prozent daran glaubst.
             </h3>
             <div className="testimonial__user">
-              <img
-                className={'hero__image'}
-                src={user}
-                alt="testimonial"
-                width={230}
-                height={315}
-              />
               <div>
-                <p>Name Surname</p>
-                <p> Poistion</p>
+                <p>Arnold Schwarzenegger</p>
               </div>
             </div>
           </div>

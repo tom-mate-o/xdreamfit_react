@@ -105,11 +105,7 @@ export default function App() {
                     Tauchen
                   </Link>
                 </li>
-                <li className="topnav__item">
-                  <Link to="/preise" className="topnav__link">
-                    Preise
-                  </Link>
-                </li>
+
                 <li className="topnav__item">
                   <Link to="/kontakt" className="topnav__link">
                     Kontakt
@@ -165,11 +161,7 @@ export default function App() {
                   Tauchen
                 </Link>
               </li>
-              <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/preise" className="mobilenav__link">
-                  Preise
-                </Link>
-              </li>
+
               <li className="mobilenav__item" onClick={handleCloseClick}>
                 <Link to="/kontakt" className="mobilenav__link">
                   Kontakt
@@ -190,7 +182,7 @@ export default function App() {
           />
           <Route path="/wohlbefinden" element={<Wohlbefinden />} />
           <Route path="/apnoetauchen" element={<Apnoetauchen />} />
-          <Route path="/preise" element={<Preise />} />
+
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/privacydisclaimer" element={<Privacydisclaimer />} />
@@ -224,11 +216,7 @@ export default function App() {
                   Apnoe Tauchen
                 </Link>
               </li>
-              <li>
-                <Link to="/preise" className="footer__link">
-                  Preise
-                </Link>
-              </li>
+
               <li>
                 <Link to="/kontakt" className="footer__link">
                   Kontakt
