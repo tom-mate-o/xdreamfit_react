@@ -14,7 +14,7 @@ import Coaching from './pages/coaching';
 import Sekundaerpraevention from './pages/sekundaerpraevention';
 import Wohlbefinden from './pages/wohlbefinden';
 import Apnoetauchen from './pages/apnoetauchen';
-import Preise from './pages/preise';
+import Shop from './pages/shop';
 import Contact from './pages/contact';
 import Impressum from './pages/impressum';
 import Privacydisclaimer from './pages/privacydisclaimer';
@@ -95,7 +95,9 @@ export default function App() {
                 </li>
                 <li className="topnav__item">
                   <Link to="/wohlbefinden" className="topnav__link">
-                    Wohlbefinden
+                    Wohl-
+                    <br />
+                    befinden
                   </Link>
                 </li>
                 <li className="topnav__item">
@@ -103,6 +105,12 @@ export default function App() {
                     Apnoe
                     <br />
                     Tauchen
+                  </Link>
+                </li>
+
+                <li className="topnav__item">
+                  <Link to="/shop" className="topnav__link">
+                    Shop
                   </Link>
                 </li>
 
@@ -163,6 +171,12 @@ export default function App() {
               </li>
 
               <li className="mobilenav__item" onClick={handleCloseClick}>
+                <Link to="/shop" className="mobilenav__link">
+                  Shop
+                </Link>
+              </li>
+
+              <li className="mobilenav__item" onClick={handleCloseClick}>
                 <Link to="/kontakt" className="mobilenav__link">
                   Kontakt
                 </Link>
@@ -182,7 +196,7 @@ export default function App() {
           />
           <Route path="/wohlbefinden" element={<Wohlbefinden />} />
           <Route path="/apnoetauchen" element={<Apnoetauchen />} />
-
+          <Route path="/shop" element={<Shop />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />
           <Route path="/privacydisclaimer" element={<Privacydisclaimer />} />
@@ -214,6 +228,11 @@ export default function App() {
               <li>
                 <Link to="/apnoetauchen" className="footer__link">
                   Apnoe Tauchen
+                </Link>
+              </li>
+              <li>
+                <Link to="/shop" className="footer__link">
+                  Shop
                 </Link>
               </li>
 

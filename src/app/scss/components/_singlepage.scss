@@ -5,7 +5,8 @@
     background-color: var(--sp-bg);
     padding: u.rem(20);
     border-radius: 25px 0 25px 0;
-    margin-bottom: u.rem(20);
+
+    margin-block: u.rem(20);
 
     p {
       color: var(--content-text-color-dark);

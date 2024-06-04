@@ -69,6 +69,34 @@
       color: var(--secondary-button-text-color-hover);
     }
   }
+
+  &.whatsapp {
+    width: 80%;
+
+    background-color: #25d366;
+    height: auto;
+
+    @include u.breakpoint('medium') {
+      max-width: 300px;
+    }
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: u.rem(10);
+      width: auto;
+    }
+
+    .icon {
+      font-size: u.rem(25);
+    }
+
+    &:hover {
+      background-color: #1b9b4a;
+      color: white;
+    }
+  }
 }
 
 .tealButton {

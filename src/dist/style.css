@@ -136,11 +136,13 @@ a:active {
   --link-color-hover: hsl(180, 100%, 35%);
   --highlight-bg: #3a506b;
   --quote-bg: #0b132b;
+  --shopcard-bg: #0b132b;
   --card-bg: #00b3b3;
   --testimonial-bg: #3a506b;
   --socialcontainer-bg: #0b132b;
   --cta-bg: #00d3d4;
   --sp-bg: #a9b2be;
+  --shop-price: #00b3b3;
   --dark-color-mobile-gallery-opacity: rgba(0, 0, 0, 0.4);
   --all-color: hsl(0, 0%, 50%);
   --react-color: hsl(207, 46%, 63%);
@@ -215,6 +217,30 @@ a:active {
   background-color: var(--secondary-button-bg-hover);
   border: 2px solid var(--secondary-button-border-hover);
   color: var(--secondary-button-text-color-hover);
+}
+.button.whatsapp {
+  width: 80%;
+  background-color: #25d366;
+  height: auto;
+}
+@media (min-width: 43.75em) {
+  .button.whatsapp {
+    max-width: 300px;
+  }
+}
+.button.whatsapp span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: auto;
+}
+.button.whatsapp .icon {
+  font-size: 1.5625rem;
+}
+.button.whatsapp:hover {
+  background-color: #1b9b4a;
+  color: white;
 }
 
 .tealButton {
@@ -808,7 +834,7 @@ a:active {
   background-color: var(--sp-bg);
   padding: 1.25rem;
   border-radius: 25px 0 25px 0;
-  margin-bottom: 1.25rem;
+  margin-block: 1.25rem;
 }
 .singlepage__contentContainer p {
   color: var(--content-text-color-dark);
@@ -1521,4 +1547,59 @@ button:hover {
   width: 100%;
   height: 100%;
   background-color: grey;
+}
+
+.shop__shopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1.875rem;
+}
+@media (min-width: 43.75em) {
+  .shop__shopContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+.shop__itemContainer {
+  background-color: var(--shopcard-bg);
+  border-radius: 1.5625rem;
+  padding: 1.5625rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+@media (min-width: 43.75em) {
+  .shop__itemContainer {
+    width: calc(50% - 0.625rem);
+  }
+}
+@media (min-width: 56.25em) {
+  .shop__itemContainer {
+    width: calc(33.33% - 0.9375rem);
+  }
+}
+.shop__itemContainer__itemName {
+  color: var(--text-color-light);
+}
+.shop__itemContainer__image {
+  width: 100%;
+  border-radius: 1.5625rem;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+.shop__itemContainer__description {
+  padding-block: 1.25rem;
+}
+.shop__itemContainer__description p {
+  color: var(--text-color-light);
+}
+.shop__itemContainer__price {
+  padding-block-end: 0.625rem;
+  color: var(--shop-price);
 }/*# sourceMappingURL=style.css.map */

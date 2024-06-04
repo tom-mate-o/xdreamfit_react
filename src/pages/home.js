@@ -13,10 +13,11 @@ import xdreamfit3 from '../img/xdreamfit_3.jpg';
 import xdreamfit4 from '../img/xdreamfit_4.jpg';
 import yingyang from '../img/yingyang.png';
 import quote from '../img/quote.png';
-import user from '../img/user.png';
+
 import xdreamfitinsta from '../img/xdreaminsta.png';
 import { BsThreads } from 'react-icons/bs';
 import { BsInstagram } from 'react-icons/bs';
+import { FaWhatsapp } from 'react-icons/fa';
 
 export default function Home() {
   useEffect(() => {
@@ -221,6 +222,12 @@ export default function Home() {
               vitaleren Leben und entfalte dein volles Potenzial!
             </p>
             <button className="button cta">Termin vereinbaren</button>
+            <button className="button cta whatsapp">
+              <span>
+                <FaWhatsapp className="icon" />
+                Schreibt mir auf WhatsApp
+              </span>
+            </button>
           </div>
         </div>
 

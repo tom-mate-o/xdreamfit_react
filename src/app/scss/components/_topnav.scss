@@ -76,6 +76,11 @@
       height: u.rem(32);
       justify-content: space-between;
     }
+
+    @include u.breakpoint(large) {
+      li {
+      }
+    }
   }
 
   &__item {
