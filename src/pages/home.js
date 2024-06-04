@@ -221,13 +221,21 @@ export default function Home() {
               Worauf wartest du? Beginne noch heute deine Reise zu einem
               vitaleren Leben und entfalte dein volles Potenzial!
             </p>
-            <button className="button cta">Termin vereinbaren</button>
-            <button className="button cta whatsapp">
+
+            <button className="button cta">
+              {' '}
+              <Link to="/kontakt">Termin vereinbaren </Link>
+            </button>
+
+            <a
+              className="button cta whatsapp"
+              href="https://wa.me/436642435022?"
+            >
               <span>
                 <FaWhatsapp className="icon" />
-                Schreibt mir auf WhatsApp
+                WhatsApp
               </span>
-            </button>
+            </a>
           </div>
         </div>
 

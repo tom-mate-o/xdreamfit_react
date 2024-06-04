@@ -312,7 +312,7 @@ a:active {
   background-color: var(--navbar-color-bg);
   position: sticky;
   top: 0;
-  z-index: 99999;
+  z-index: 1000;
 }
 .topnav__wrapper {
   display: flex;
