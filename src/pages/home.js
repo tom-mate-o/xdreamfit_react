@@ -55,14 +55,22 @@ export default function Home() {
         <h1 className="hero__title">
           Gemeinsam fit.
           <br />
-          Fitness & Wohlbefinden
+          mit Personal Training und Fitnesscoaching zu mehr Wohlbefinden
         </h1>
         <div className="hero__left">
           <div className="hero__text">
             <p className="hero__content">
-              👋 Hi, ich bin Susi. Tauche mit mir ein in die Welt des
-              ganzheitlichen Wohlbefindens. Gemeinsam erreichen wir deine Ziele
-              während dein Körper und Geist in Einklang kommen.
+              Du möchtest endlich fit werden, mit dem Training beginnen, dem
+              Alltagsstress entfliehen und Körper und Geist in Einklang bringen?
+              Aber du weißt nicht, wo du anfangen sollst?
+              <br />
+              <br />
+              <b>Dann bist du bei mir richtig!</b>
+              <br />
+              <br />
+              Ich bin Susi und gemeinsam mit mir erreichst du deine Ziele. Egal,
+              wie alt du bist oder welche Vorgeschichte du hast – ich habe es
+              geschafft und du kannst das auch!
             </p>
             <div className="hero__buttons">
               <Link to="/about" className="hero__button button primary">
@@ -89,11 +97,11 @@ export default function Home() {
           <div className="highlights__container" id="1">
             <img src={xdreamfit1} alt="Personal Coaching"></img>
             <div className="highlights__textContainer">
-              <h3 className="highlights__title">Personal Coaching</h3>
+              <h3 className="highlights__title">Fitnesscoaching</h3>
               <p className="highlights__text">
-                Begleite mich auf deiner Reise zu persönlichem Wachstum und
-                Entfaltung. Gemeinsam schaffen wir die Grundlage für deine beste
-                Version.
+                Auf deiner Reise zu persönlichem Wachstum und Entfaltung
+                begleite ich dich vom ersten Schritt bis zum Erreichen deines
+                Ziels. So wirst du zur besten Version deiner selbst.
               </p>
               <button className="highlights__button tealButton">
                 <Link to="/coaching">...mehr!</Link>
@@ -106,9 +114,8 @@ export default function Home() {
             <div className="highlights__textContainer">
               <h3 className="highlights__title">Sekundär-Prävention</h3>
               <p className="highlights__text">
-                Gemeinsam verhindern wir potenzielle Probleme. Mit
-                maßgeschneiderter Sekundärprävention fördern wir dein
-                Wohlbefinden langfristig.
+                Vorbeugen ist besser als heilen! Mit gezielten Übungen fördern
+                wir dein Wohlbefinden langfristig und halten dich fit.
               </p>
               <button className="highlights__button tealButton">
                 <Link to="/sekundaerpraevention">...mehr!</Link>
@@ -121,7 +128,7 @@ export default function Home() {
             <div className="highlights__textContainer">
               <h3 className="highlights__title">Wohlbefinden</h3>
               <p className="highlights__text">
-                Fördere dein Wohlbefinden.Finde innere Balance und Entspannung
+                Fördere dein Wohlbefinden. Finde innere Balance und Entspannung
                 für Körper und Geist durch Körperanwendungen und mehr!
               </p>
               <button className="highlights__button tealButton">
@@ -133,11 +140,10 @@ export default function Home() {
           <div className="highlights__container" id="4">
             <img src={xdreamfit4} alt="Apnoe Tauchen"></img>
             <div className="highlights__textContainer">
-              <h3 className="highlights__title">Apnoe Tauchen</h3>
+              <h3 className="highlights__title">Hoop your body</h3>
               <p className="highlights__text">
-                Erfahre die Faszination des Apnoe-Tauchens. Tauche ein in eine
-                Welt voller Ruhe und Abenteuer unter Wasser alles mit nur einem
-                einzigen Atemzug.
+                Entdecke eine neue Dimension des Hula Hoop, stärke deine Mitte
+                und hab gleichzeitig jede Menge Spaß dabei.
               </p>
               <button className="highlights__button tealButton">
                 <Link to="/apnoetauchen">...mehr!</Link>

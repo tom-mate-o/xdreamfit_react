@@ -10,6 +10,7 @@
 
     p {
       color: var(--content-text-color-dark);
+      max-width: 90ch;
     }
   }
 
@@ -28,6 +29,7 @@
     background-color: var(--main-bg);
     color: var(--content-text-color-dark);
     margin-block-end: u.rem(30);
+    padding-inline: u.rem(20);
 
     @include u.breakpoint('medium') {
       margin-block-start: u.rem(30);

@@ -6,6 +6,7 @@ h3 {
   font-weight: 700;
   margin: 0;
   padding: 0;
+  max-width: 90ch;
 }
 
 h1 {
@@ -26,9 +27,9 @@ h3 {
 
 p {
   margin: 0;
-
   font-size: u.rem(14);
   font-size: clamp(u.rem(14), 0.84rem + 0.19vw, u.rem(16));
+  max-width: 90ch;
 }
 
 a,

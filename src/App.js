@@ -13,7 +13,7 @@ import About from './pages/about';
 import Coaching from './pages/coaching';
 import Sekundaerpraevention from './pages/sekundaerpraevention';
 import Wohlbefinden from './pages/wohlbefinden';
-import Apnoetauchen from './pages/apnoetauchen';
+import Hoop from './pages/hoop';
 import Shop from './pages/shop';
 import Contact from './pages/contact';
 import Impressum from './pages/impressum';
@@ -101,10 +101,10 @@ export default function App() {
                   </Link>
                 </li>
                 <li className="topnav__item">
-                  <Link to="/apnoetauchen" className="topnav__link">
-                    Apnoe
+                  <Link to="/Hoop" className="topnav__link">
+                    Hoop
                     <br />
-                    Tauchen
+                    your body
                   </Link>
                 </li>
 
@@ -163,10 +163,10 @@ export default function App() {
               </li>
 
               <li className="mobilenav__item" onClick={handleCloseClick}>
-                <Link to="/apnoetauchen" className="mobilenav__link">
-                  Apnoe
+                <Link to="/hoop" className="mobilenav__link">
+                  Hoop
                   <br />
-                  Tauchen
+                  your body
                 </Link>
               </li>
 
@@ -195,7 +195,7 @@ export default function App() {
             element={<Sekundaerpraevention />}
           />
           <Route path="/wohlbefinden" element={<Wohlbefinden />} />
-          <Route path="/apnoetauchen" element={<Apnoetauchen />} />
+          <Route path="/hoop" element={<Hoop />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/kontakt" element={<Contact />} />
           <Route path="/impressum" element={<Impressum />} />

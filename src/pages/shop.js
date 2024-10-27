@@ -18,7 +18,7 @@ export default function Shop() {
         </div>
         <div className="shop__shopContainer">
           <div className="shop__itemContainer">
-            <h3 className="shop__itemContainer__itemName">Edehlstahlbecher</h3>
+            <h3 className="shop__itemContainer__itemName">Edelstahlbecher</h3>
             <img
               src={Becher}
               alt="Becher"

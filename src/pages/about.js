@@ -26,6 +26,38 @@ export default function About() {
         <div className="singlepage__dividerHeadline">
           <h2>Über mich</h2>
         </div>
+        <div className="singlepage__dividerSubHeadline">
+          <b>Es ist nie zu spät, neu anzufangen! </b>
+        </div>
+
+        <p>
+          Und egal, wo du gerade stehst: Du kannst jeden Tag ein neues Kapitel
+          aufschlagen. Das glaubst du nicht?
+        </p>
+        <br />
+        <p>
+          Ich selbst bin vielleicht der beste Beweis dafür, dass man mit dem
+          richtigen Mindset und Disziplin alles schaffen kann.
+        </p>
+        <br />
+        <p>
+          Nach mehr als zehn Operationen und der bereits dritten Prothese am
+          linken Knie habe ich mich Schritt für Schritt zurück ins Leben
+          gekämpft und bin nun fitter und stärker als zuvor. Mein Motto: Come
+          back stronger! Denn nicht durch schonen erreicht man Großes, sondern
+          indem man in Bewegung bleibt und seine Komfortzone verlässt.
+        </p>
+        <br />
+        <p>
+          Heute helfe ich anderen dabei, den Weg zurück ins Leben zu finden, fit
+          zu werden und die gesetzten Ziele zu erreichen. Vielleicht auch bald
+          dir!
+        </p>
+        <br />
+        <h3 className="testimonial__quote">
+          Wenn es dir egal ist, was andere über dich denken, dann hast du ein
+          hohes Level an Freiheit erreicht.
+        </h3>
         <Gallery
           images={images}
           onClick={(event, obj) => {
