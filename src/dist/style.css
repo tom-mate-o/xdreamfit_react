@@ -548,6 +548,7 @@ a:active {
   object-fit: cover;
   margin-top: 0.625rem;
   margin-bottom: 1.25rem;
+  aspect-ratio: 1/1;
 }
 
 .mobilenav {
@@ -1210,8 +1211,10 @@ button:hover {
 .highlights__container img {
   width: 100%;
   min-height: 12.5rem;
+  max-height: 12.5rem;
   border-radius: 25px 0 0 0;
   object-fit: cover;
+  object-position: center;
 }
 .highlights__textContainer {
   height: 100%;

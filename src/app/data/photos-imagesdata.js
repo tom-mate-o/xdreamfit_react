@@ -18,7 +18,7 @@ export const images = [
     src: photo1,
     width: 640,
     height: 350,
-    caption: 'sussi planked im schnee',
+    caption: 'susi planked im schnee',
   },
   {
     src: photo2,

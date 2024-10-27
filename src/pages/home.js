@@ -6,11 +6,11 @@ import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
 import PauseOnHover from '../components/PauseOnHover';
-import xdreamfitavatar from '../img/xdreamfit_avatar.jpg';
+import xdreamfitavatar from '../img/xdreamgallery/hoop2.jpeg';
 import xdreamfit1 from '../img/xdreamfit_1.jpg';
 import xdreamfit2 from '../img/xdreamfit_2.jpg';
 import xdreamfit3 from '../img/xdreamfit_3.jpg';
-import xdreamfit4 from '../img/xdreamfit_4.jpg';
+import xdreamfit4 from '../img/xdreamgallery/hoop8.jpeg';
 import yingyang from '../img/yingyang.png';
 import quote from '../img/quote.png';
 
@@ -146,7 +146,7 @@ export default function Home() {
                 und hab gleichzeitig jede Menge Spaß dabei.
               </p>
               <button className="highlights__button tealButton">
-                <Link to="/apnoetauchen">...mehr!</Link>
+                <Link to="/hoop">...mehr!</Link>
               </button>
             </div>
           </div>
