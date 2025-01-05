@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import kurse from '../img/kurse.jpg';
 
 import PauseOnHover from '../components/PauseOnHover';
 import xdreamfitavatar from '../img/xdreamgallery/hoop2.jpeg';
@@ -152,6 +153,17 @@ export default function Home() {
           </div>
         </div>
 
+        <div className="info_section wrapper">
+          <img
+            className={'h'}
+            src={kurse}
+            alt="Gruppenkurse"
+            width={'100%'}
+            height={'auto'}
+          />
+          <br />
+        </div>
+
         <div className="quote__section">
           <div className="quote__container">
             <h2 className="quote__title">
@@ -257,7 +269,7 @@ export default function Home() {
             />
             <Marker position={position} icon={createDefaultIcon()}>
               <Popup>
-                A pretty CSS3 popup. <br /> Easily customizable.
+                Margarethe-Schütte-Lihotzky Siedlung 61 8605 Kapfenberg
               </Popup>
             </Marker>
           </MapContainer>

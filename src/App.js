@@ -83,7 +83,9 @@ export default function App() {
                 </li>
                 <li className="topnav__item">
                   <Link to="/coaching" className="topnav__link">
-                    Coaching
+                    Coaching &
+                    <br />
+                    Gruppenkurse
                   </Link>
                 </li>
                 <li className="topnav__item">
@@ -145,7 +147,9 @@ export default function App() {
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
                 <Link to="/coaching" className="mobilenav__link">
-                  Coaching
+                  Coaching &
+                  <br />
+                  Gruppenkurse
                 </Link>
               </li>
               <li className="mobilenav__item" onClick={handleCloseClick}>
